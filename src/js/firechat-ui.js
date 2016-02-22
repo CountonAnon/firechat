@@ -149,6 +149,7 @@
       }
     },
     _onNewMessage: function(roomId, message) {
+      console.log("got message ", message);
       var userId = message.userId;
       if (!this._user || !this._user.muted || !this._user.muted[userId]) {
         this.showMessage(roomId, message);

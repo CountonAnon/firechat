@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'firechat',
+1 verbose cli   '--save' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData firechat
+8 silly fetchNamedPackageData firechat
+9 silly mapToRegistry name firechat
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/firechat
+13 verbose request uri https://registry.npmjs.org/firechat
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 3:06:07 PM
+16 verbose request id f0b0f8e19c19b473
+17 http request GET https://registry.npmjs.org/firechat
+18 http 200 https://registry.npmjs.org/firechat
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"4H9UF9C7PI4XN2G8MJVTZX99Y"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '4104',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Sun, 21 Feb 2016 23:06:07 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1456095967.476485,VS0,VE351',
+19 verbose headers   vary: 'Accept' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"4H9UF9C7PI4XN2G8MJVTZX99Y"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '4104',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Sun, 21 Feb 2016 23:06:07 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-sjc3132-SJC',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1456095967.476485,VS0,VE351',
+20 silly get     vary: 'Accept' } ]
+21 verbose get saving firechat to /Users/valentine/.npm/registry.npmjs.org/firechat/.cache.json
+22 verbose correctMkdir /Users/valentine/.npm correctMkdir not in flight; initializing
+23 silly install normalizeTree
+24 silly loadCurrentTree Finishing
+25 silly loadIdealTree Starting
+26 silly install loadIdealTree
+27 silly cloneCurrentTree Starting
+28 silly install cloneCurrentTreeToIdealTree
+29 silly cloneCurrentTree Finishing
+30 silly loadShrinkwrap Starting
+31 silly install loadShrinkwrap
+32 silly loadShrinkwrap Finishing
+33 silly loadAllDepsIntoIdealTree Starting
+34 silly install loadAllDepsIntoIdealTree
+35 silly rollbackFailedOptional Starting
+36 silly rollbackFailedOptional Finishing
+37 silly runTopLevelLifecycles Starting
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: Refusing to install firechat as a dependency of itself
+40 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+40 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+40 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+40 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+40 verbose stack     at Array.forEach (native)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+40 verbose stack     at Array.forEach (native)
+40 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+41 verbose cwd /Users/valentine/count.on.anon/firechat
+42 error Darwin 14.5.0
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "firechat" "--save"
+44 error node v5.6.0
+45 error npm  v3.6.0
+46 error code ENOSELF
+47 error Refusing to install firechat as a dependency of itself
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
